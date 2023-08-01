@@ -1,0 +1,8 @@
+Tips :
+##
+>>Enquiry about the job description
+>>Research phase
+>>Introduciton phase(>>Tell them the work u done related to that their requirement)
+>>Projects(Security,Automation,CI/CD,Config mgmt etc..)
+>>In the end ask questions:: About work timings,Technologies etc..
+>>Practice Handson..

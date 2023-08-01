@@ -1,0 +1,26 @@
+1. Give me brief information about you.
+2. Can you define your rolls and responsibility in our previous company?
+3. How much you rate yourself in Ansible, Terraform, Docker and Jenkins?
+4.  Why did Devops method is popular as compared to Agile and waterfall method?
+5.  Can you tell difference between git fetch and git pull?
+6. Can you differentiate git bash and git merge?
+7. What is cherry-pick in git?
+8. How do you create a new branch?
+9. What command you use to delete branch and change the branch in git?
+10. How to resolve merge conflict?
+11.  How git works/area of git working?
+12.  What is difference between SCM and  VCS?
+13. What is git stash?
+14.  What are status code  200, 404, 501,502, etc?
+15. How to undo changes in local repository?
+16. Differentiate between git  revert and git reset?
+17. In what team you working?
+18. Is it possible to push the code from one local repo to another local repo?
+19. Do you know shell script?
+20. what is mean by $$, $*, $# ?
+21. could you please share your screen and write the shell script to print 1 to 10?
+22. what is bin directory?
+23. What is softlink and hardlink?
+24. Can you explain Maven lifecycle?
+25. Can you explain Kubernetes architecture?
+26. Can you  write syntax for pipeline script in jenkins?

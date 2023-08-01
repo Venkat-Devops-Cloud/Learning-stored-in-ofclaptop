@@ -1,0 +1,518 @@
+1.Database migrations(Amazon DynamoDB,Amazon Aurora,Amazon Relational Database Service,Amazon Timestream,Amazon Neptune,Amazon Quantum Ledger Database (QLDB),Amazon RDS on VMware) & Database replicas 
+Devops --Networking,Security && Database,System Design..
+2.what kind of microservice architecture patterns used?  
+3.Devops mostlty concentrating on performance of the application?//Performance of the Database?
+performance issues challenges?
+4.What u will do if the application is not stable in production what u will do ?
+5.If both the environments (Blue env & Green env) both are live & healthy how u will divert some part of traffic to another env?
+6.If one environment is affected then to divert the traffic --we can use loadbalancer..
+7.secret mgmt process in project? --Any Tool (Vault)
+8.cloud choosen --Community support,Pricing etc..
+9.What is the diff loadbalancer network forwarding &&& DNS network forwarding
+10.Sonarqube --codesmell,Vulnerabilities,code quality
+11.In AWS :: instead of storing data in S3 Bucket to escape from pricing is there any possibility to store code/files in github and can we link to s3 bucket?
+12.Any Migrations ::
+
+opnensource Database -->AWS Database service..(S3)
+
+13.Devsecops Tool --checkmarx tool (Security),SonarQube ,SAST,SCA,Image scan
+14.Tell me some examples of vulnerabilities in your approach?
+15.Have u perforemed any "Disaster Recovery" ??
+16.Have u involved in "cost optimization/Cost mgmt" related services in cloud?/What was u r recommandations?
+https://www.youtube.com/watch?v=Ku2JnjlGYYM
+
+If customer running his workloads in EKs --what 
+17.How r u  "managing secretes" in your project/Sensitive inf ?(AWS/Devops)?
+18.Application migration strategy (on-premises -->AWS Cloud)
+challenges/Issues faced while migration?
+>>Whenever migration comes into picture we will hear about "Workloads"..
+>>At Project level Migration :: Monolithic -->Microservices 
+>>Database Migration
+>>Patching 
+
+19.What is the specific advantage of Agents? (Jenkins Agent? /Cloudwatch Agent?)
+what is the purpose of Runners ?(GitHub Runners/Jenkins Runners)?
+20.Devsecops -- veracode,CheckMarx,synk security Focus
+SAC,SAST,DAST,How u incorporated the Security in CI/CD Pipeline?  ,WAF,
+21.In interviews: 
+They might ask to share the screen & write "any Automation/Deployment scripts" in different Operating systems(Linux,unix,Ubuntu etc..)
+
+Ex: 
+>>Read file & remove the extra spaces using shell script
+>>Terraform script to create a VPC/Subnet
+>>Ansible playbook
+>>Kubernetes Deployment script
+>>Jenkins Declarative pipelines
+>>Write a Docker file : Deployment in nginx container  && Multistage Docker file?
+22.Devops Regular:
+>>Day to day activities
+>>Explain Roles & Responsibilities
+>>Projects
+>>Challenges
+>>Best practices
+>>Commands
+>>
+
+23.Multistage Docker file,Multi stage Jenkins file,Multi stage Deployment file
+
+24.How you are maintaining the different environments for AWS Account(Dev,QA,Stage)?
+25.Architecture point of view need to put your project ::
+>>Devops
+>>AWS/GCP/Azure..
+
+26.How you do organise the CI/CD Pipeline in u r project (Jenkins/Gitlab CI/CD,CircleCI)
+>>option 1 :: we can maintain the same pipeline flow for all the env's (Dev -->QA -->Stage -->Prod)
+>>Option 2 :: we can maintain different pipelines for each environment..
+
+27.Configuration::
+>>How do you configure kubernetes in AWS?
+
+>>How is the Traffic flowing from request -->EKS Cluster -->Application --End user
+Ans :: ingress configuration -->ingress controller(rules)-->kubernetes pod
+
+Route53 -->Load balancer -->DNS -->Ingress -->node -->service -->pod-->container -->Application
+
+Host based Routing
+Path based Routing
+
+Usually whole pipeline (setup etc..are vary from env to env)
+
+
+28.If suppose application is not responding ..how will you debug?
+>>Manually verifying & Trying to simulate
+>>Try to hit the loadbalancer,see whether application reaching the load balancer
+is the loadbalancer forwarding my request to the application ,i can check with the loadbalancer logs 
+if still application  not running :: check the threads (Any issues with threads)
+
+29.How do u ensure zero down-time in kubernetes?
+
+30.Autoscaling,Loadbalancer,Replicasets,Replication controller,High Availability,Deployment,ScaleOut,scaleIn..
+
+31.U should aware about all the installations of Devops Tools..(in different operating systems)
+
+32.How you used scripting languages (i.e;Go,Python,Rust etc.in Devops)--Benifits,Necessity etc..
+
+33.Why do we need Kubernetes YAML files ?(Does with the manifest files are we able to automate the deployments)?
+Try to explore more with parameterized manifest files?(Is there any possibility)
+
+34.What kind of role permissions u hv for u r AWS Account in project??(Admin Role Or Viewing Role etc..)
+
+35.Debug,Troubleshooting,Error Analysis??
+
+https://www.youtube.com/watch?v=ORSxQeboprc&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=20
+
+36.what is the codedrop(CD) process followed in u r project? --(PIER2.0 in T-Mobile etc..)
+
+37.Best practices for each Tool --Ansible,Docker,Terraform,Kubernetes..
+https://www.youtube.com/watch?v=5xtUmlARaZs
+https://www.youtube.com/watch?v=oBf5lrmquYI
+
+
+1.https://medium.com/@praveensirvi/10-kubernetes-best-practices-to-know-3c7e42d81d70 --Best Practices for kubernetes
+2.https://medium.com/@praveensirvi/10-security-best-practices-in-kubernetes-8d9e29c132c4
+3.https://medium.com/@praveensirvi/best-practices-to-write-dockerfile-5007658c9015
+
+	
+
+
+38.Leftshift in Devops?
+Ans: Previously the flow :: Dev -->QA->Staging -->Preprod-->Prod
+After code reaching into prod ,team concentrating on Security,compatability ,Testing etc..
+Bcz of this approach: we are folowing the standards in the initial development env..
+so for each env we hv to concentrate on Security,Testing,compatability etc..
+
+38.Branching strategy in u r project ? (Critical:Get info in detail)
+Ans: 
+1.Git model
+2.Feature branching strategy (Microservice )
+
+
+
+39.kubernetes ::
+https://github.com/magnologan/awesome-k8s-security
+
+Below errors we usually get & solution for the link::
+
+>>crashloopbackoff Error?
+>>ImagePullBackoff?
+>>Registryunavailable?
+>>InvalidImageName
+>>KillContainerError?
+https://www.youtube.com/watch?v=ORSxQeboprc&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=20
+
+>>OOMKilled Errors in kubernetes?
+https://www.youtube.com/watch?v=5UW0q64B8PA&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=21
+
+>>what is meant by  CRD(Custom Resource Definition file),Container Runtime Engine(CRE)?
+>>Expalin about kubernetes controllers & kubernetes operators?
+>>Feature Gates in kuberntes?
+https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/
+>>How to check available cpu & memory requests in kubernetes?
+>>How to check Top three most cpu utilised pods in kubernetes cluster?
+>>How to upgrade/downgrade a system with zero downtime?
+>>How do u pass parameters @runtime in jenkins?
+>>what is an executor in jenkins?
+>>How can i run single job parallely on multiple jenkins slave?
+>>CI/CD Pipeline build with Jenkins,Github Actions etc..
+
+1.how to set alert for cluster , if pod went down & how do we get over email id
+2.how to import secret into pod manifest
+3.pod getting image pull back off error due to authorization how to solve
+4.namescape are stuck in terminating state how to solve this
+5.pod are stuck in pending state due to node had volume affinity conflict how to solve
+6.disk pressure alert over worker node how to solve
+7.need access request over aws ecr
+8.pod are down due to oci runtime
+9.kubelet stopped working on worker node how to solve
+10.request for to apply nodeselector over pod
+11.pods are not able to communicate with each other
+12.what is evicted pod when does it comes & how to solve 
+13.readiness and liveness troubleshooting
+14.config map error
+
+Minikube installation:
+https://www.youtube.com/watch?v=Ttp0c-SX1Pc&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc&index=1&t=0s
+
+U should aware how to set diff kubernetes distributions::
+Minikube,kind,kops,containerd
+kubernetes jobs
+pods recreation/rollout strategy
+what is meant by port forwarding?
+kubernetes Metrics server
+necessity of HPA (Horizontal POd Autoscaler) in kubernetes?
+How to update kubernetes cluster environment?
+https://www.golinuxcloud.com/kubernetes-upgrade-version/
+How to add/delte nodes to the existing kubernetes cluster?(Cordoning nodes)
+https://www.golinuxcloud.com/kubernetes-add-node-to-existing-cluster/
+
+coreDNS Architecture in kubernetes?
+How communication between:: 
+pod-to-pod communication,container-to-container,node-to-node,pod-to-service
+
+
+>>Docker:
+##
+>>what is container,Docker image,Docker file,Docker image Registeries?
+>>Docker components?
+>>Can u lose data when the container exists?
+>>How we can run multiple copies of compose file onthe same host?
+>>maximum no.of containers that can run per host?
+
+
+concepts we should know in kubernetes::
+###########
+>>what are some challenges with Prometheus?
+Ans: https://www.youtube.com/watch?v=Axplgxm4K3U
+>>How do you handle your kubernetes cluster security?
+https://github.com/iam-veeramalla/Kubernetes-Zero-to-Hero/blob/main/Security/Manage_Security_Like_Pro.md
+
+>>How two containers running in a single POD have single IP Address?
+>>What is servicemesh & why do we need it?
+>>what is init containers & what is sidecar container?
+>>What is pod disruption budget?
+https://kubernetes.io/docs/tasks/run-application/configure-pdb/
+>>what is custom controller?Did u build one & How to build one?
+>>What is pod security policy?
+>>What is Admission controller in kubernetes?
+>>Explore about different kubernetes Distributions(kind,minikube,kops etc.)?
+https://www.youtube.com/playlist?list=PL8WTXLSrtyWpC_2KvHF49VkbtIVOcd8Gl
+>>Container Runtimes (Containerd,CRIO,Docker Engine)
+>>Kubernetes Resources (Deployment,statefulset,Daemon set,Job,Cronjob)
+>>Kubernetes Resource limits ? (Requests & Limits)
+Request --Gauranteed value(container is gauranted to get)
+Limit -- Max amount of value(container never goes above the value)
+
+>>Kubernetes Throttling ??
+>>We should be in a position to write kubernetes Operators & Controllers(based on Go language)
+
+40.Anyone know how to delete AWS Lambda version using script just i need last 3 version from all versions
+what we need to do to limit the automatic storing of versions to 3
+
+41.Can u explain the "jenkins shared library" concept?
+42.Explain the importance of monitoring & Logging in Devops?
+Ans: As now a days all the modern Application developments are around microservices.
+Microservices are running based out of containers & POD's..
+so we should need to monitor each & every service for seamless 
+
+
+43.How to limit the access to the application to the no.of concurrent users to <some number> Ex: 500
+how we can track the IP's (Particular users logged in via kubernetes etc..)??
+Which ports are open for a network??
+
+
+44.Sonarqube related questions::
+>>codesmeels,code quality,linting issues etc..
+
+
+
+
+45.When we will go with Github Actions over jenkins?
+If our source code repository always is Git then we can go with Github Actions..we can write webhook files..
+
+46.When we require the necessity of mainifest files in kubernetes?
+
+47.Pod life cycle?&& Types of probes in kubernetes?
+Container life cycle?
+
+
+when we will use:: 
+>>liveness probes,Readiness probes && Startup probe
+
+>>Types of containers ::
+Docker
+LXC
+CRI-O
+rkt
+Podman
+runc
+containerd
+
+48.How to know which ports are open in networking?
+49.What is proxy,Reverse proxy,servicemesh,ingress?
+50.what is namespace,control plane in kubernetes?
+51.Purpose of wget command?
+52.Expalin about AWS Well Architectured framework?
+53.Zero Trust policy in cloud?
+54.How Garbage Collection happens in kubernetes?
+https://kubernetes.io/docs/concepts/architecture/garbage-collection/
+
+55.Which versions u r using in u r project (All Tools)?
+
+56.Need to know when to use 
+brew,yum,sudo ,wget etc while downloading any software?
+57.Explore about hubs (DockerHub,ArtifactoryHUb)?
+https://artifacthub.io/
+58.Can u explain the Deployment models in kubernetes ?
+>>Blue/Green Deployment,Canary Deployment,Rolling deployments,Recreating deployments
+Can u explain the loadbalancer Types??
+>>Round Robbin
+>>Sticky Round Robbin
+>>Weighted Round Robbin
+>>IP/URL Hash
+>>Least connections
+>>Least Time
+
+59.Does kubernetes master node can be considered as "Agent"?
+purpose of Agent?
+60.Types of servers?(web servers,DNS Servers,Mail server,Proxy server,FTP Server,Original server etc..)?
+Types of API Patterns?(Architectural Pattern etc..)
+Types of containers(init Container,sidecar container,Regular container)
+61.What are the check points/precautions need to take before migration/
+retiering a Application from one to another
+(How to migrate the workload :userload from one application to another Application)?
+62.K8 HPA ,k8 PV,K8 PVC
+Monitoring project ::
+ELK Setup(Elastic search,Logstash,Kibana)
+Influx setup and time series database for Prometheus
+Kafka setup and batch processing
+
+63.Why DB Scripts(sqls,Procedures,Triggers etc..) not saving in git(source code repository)?
+64.maximum verbosity call in kubernetes API Server?
+Ans: 9 (kubectl get pods -v=9)
+65.If we are deploying application into opensource(kubernetes/Openshift) then it will be deploying into server?/Pod
+pod deployment is similar to server deployment?
+66.Reasons for Pod destroying?
+67.Does Docker namespace & kubernetes namespace differnt?:purpose
+68.How do we know all the components in a cluster is working as expected?
+How do we know the cluster is ready for work in kubernetes?
+How to configure new nodes in kubernetes cluster?
+maximum no.of nodes in kubernetes cluster?
+69.Can u explain about the Github copilot?
+70.Is there any chance container itself goes down/Inactive?
+how to handle those situations?
+71.can u explain WAF(Web application firewall)?
+72.Explain about the Deployment strategies?(Canary,Blue-Green)?
+
+73. how to add 3 user to login for particular project A where is running in dev, qa and prod namespaces in a k8s cluster. one user have full admin access to create, delete, edit and view the resources of all related project namespace and another user have only QA namespace access to only see the resources only and last user have dev namespace's full access. "
+
+74.Circuit breaker pattern -Fault Tolerance Microservices?
+75.Kubernetes :: Requests,Resource limits etc..?
+Affinity,POd-Anti-Affinity etc..?
+76.R we creating image for each & every Microscervice(API),If i commited new code for that autmatic image will create?
+Any time image size exceeded error like that encountered?
+77.As a Devops Engineer: we should aware about API Status codes & API Functionalities in the Project..
+78.Helm:
+##
+https://github.com/Azure-Samples/helm-charts/tree/master/chart-source
+>>Diff b/w Helm2 vs Helm3 difference?
+https://github.com/bregman-arie/devops-exercises/tree/master/topics/cicd (For Devops Interview Questions)
+
+https://jhooq.com/building-first-helm-chart-with-spring-boot/ 
+ 
+79.Grafana & Prometheus::
+##
+>>Can u explain Architecture of prometheus?
+https://github.com/iam-veeramalla/prometheus-Grafana-Zero-to-Hero
+80.Command to change serviceType(From ClusterIP -->NodePort)?
+kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-ext
+
+
+Common Questions:
+##
+>>Day to Day Activities?
+>>what are the build issues have u faced in project?
+>>which applications have u deployed?
+>>which issues u faced in client environment during deployment?
+>>what are the stages have u written in your pipeline?
+>>Have u troubleshooted any app related issues using log verification??
+
+Good Documentation::
+#######
+https://www.golinuxcloud.com/kubernetes-init-containers/
+https://www.golinuxcloud.com/getting-started-with-ansible
+
+Devops Projects::
+###
+https://github.com/acantril/learn-cantrill-io-labs
+https://www.youtube.com/watch?v=DgavixR_w5Y&list=RDCMUCnnQ3ybuyFdzvgv2Ky5jnAA&start_radio=1&rv=DgavixR_w5Y&t=186
+https://www.youtube.com/watch?v=JGQI5pkK82w  (End to End CI/CD Pipeline)
+https://www.youtube.com/watch?v=0GgBi8yNQT4 --(End to End Devops Project)
+https://www.youtube.com/playlist?list=PLVx1qovxj-akr_3XqQQgpqRyQw4GYuS4h
+
+
+Interview Preparation:
+######################
+https://docs.google.com/document/d/1rbE0KLinxGaNAW0IFmEBAoTT_wr8R6sx5NXUYsQpnlw/edit#heading=h.1tpj58i1v0ac
+Troubleshooting ::
+##############
+https://www.youtube.com/watch?v=ZXQObhB7gBA&list=PLt8Y3NwVSVfYHa9szBTEwr-zXSUAI77dX
+
+>>Cost Saving in AWS using Boto3:: https://www.youtube.com/watch?v=qhDiPTa12I0
+
+YAML Syntax Tips::
+https://helm.sh/docs/chart_template_guide/yaml_techniques/
+
+Coding required in Devops::
+####
+>>Infrastructure as code(IAC --Terraform)
+>>Configuration as code (Ansible)
+>>Pipeline as code(Jenkins)
+>>Docker file 
+>>K8s manifest files,Helm charts file
+
+
+Ansible & Terraform have the Modules ..
+
+Best Practices:
+###
+https://www.youtube.com/watch?v=hgUfH9Ab258 --Kubernetes
+https://kubernetes.io/docs/setup/best-practices/ --kubernetes
+https://www.youtube.com/watch?v=oBf5lrmquYI --k8s security
+https://www.youtube.com/watch?v=gxPykhPxRW0 --Terraform 
+https://www.youtube.com/watch?v=8vXoMqWgbQQ --Docker
+https://www.youtube.com/watch?v=JofsaZ3H1qM --Docker file best practices..
+
+Channels need to follow for Mock Interviews:
+################
+1.Cloud and Devops  --sanjeev kumar
+2.Deekshith SN  --kubernetes(https://www.youtube.com/playlist?list=PLLYW3zEOaqlLShAk9pd4FQ34KOpY7EJAq)
+3.CloudwithRaj (https://www.youtube.com/watch?v=No2vS81HplQ&list=PL5aURjJ6mdUe612kWnqxXNpPXKD9da1Af)
+4.Hi-Tech Institution --https://www.youtube.com/playlist?list=PLt8Y3NwVSVfYw9mcHUuNpnka9FkZ9wWpq
+https://www.youtube.com/playlist?list=PLt8Y3NwVSVfYv-vZzXZIoCUDukO5Wkskz
+5.Abhishek veeramalla
+6.Devops Tutorials :: https://www.youtube.com/watch?v=gvIsaPhuYtE&list=PLyo-y15K2UCWSH_VimqJZ6OeqQdzmygdh
+
+Get to know:(13-Jul-2023)
+##########
+1.By using Helm charts how we can install Grafana/Prometheus
+2.Helm charts (End-to-End )--make a notes
+3.YAML Best practices & Practice YAML files (kubernetes manifest files) --understanding minimum of 30files..
+4.How to install kubenetes in AWS(AWS EKS)?
+5.kodekloud Account creation & Practice kubernetes..
+6.Kubernetes Commands..
+7.Nexus Artifactory -Make a notes..
+
+14-Jul-2023:
+###########
+1.Docker file & Practice (End -End)
+2.Commands --Docker & kubernetes
+3.Kubenertes Revison
+4.Previous day balance need to cover..
+5.FluxCD With Gitops..
+
+Need to know:
+############
+minikube
+kubeadm
+kind
+k3d
+kubernetes cluster..
+Single node cluster
+Multinode cluster
+
+
+
+
+
+7 8 9 11 12 13 20
+
+21 22  25  29 30
+
+31 32 33 34 38 39 
+
+41 44 45 50 51 52 
+
+Note:
+CI/CD:: Jenkins,Github Actions,Gitlab CI/CD anything are heart of the Automatic Deployment process
+For every commit,it will automatically and run the pipeline
+Pipeline might contain : Security,SonarQube,artifactory,Test etc..we can create..
+So without CI/CD it will be a manual deployment
+Git -->Docker-->kubernetes
+
+For kubernetes Security below Tools will be using:
+##########################
+
+kubeshark - https://kubeshark.co/
+kyverno - https://kyverno.io/
+sysdig - https://sysdig.com/
+codecov - https://about.codecov.io/
+kube-hunter - https://github.com/aquasecurity/kube-...
+
+synk --scanning the Docker images 
+sysdig --code scan..
+
+Security required in each & every step of Devops Phase..
+Security of the Docker,kubernetes,Application,Network,Infrastructure as code(Checkov),Sonarqube(Codescan),scanning of the YAML Files,
+In CI/CD Pipeline setup we can keep the security check..
+
+
+4 10 11 14 15 16  20 25 40 --Abhishek veeramalla
+
+ 7 11 12 13 14 15 --golinuxcloud..
+ Areez Asif --6 videos
+ DevopsToolkit --6 videos
+ 
+ Tools : Helm,Karpenter,Kustomize,Ingress,Istio(Servicemesh),
+         kubeshark,ArgoCD,FluxCD,KEDA(Kubernetes EventDriven Autoscaling),Gatekeeper (All Tools overview Done)
+ 
+ 
+Note ::
+##
+Practice AWS (Architectural)& Devops(Project flow) diagrams for every flow.. 
+
+
+AWS:
+###
+>>How to ensure smooth migration when we are doing the instance change form t3.medium -->t2.large in AWS?
+>>How to handle S3 Change scenario(s3 storage class change)
+>>What are the reasons if u hv created the ec2 instance
+but for the first time u were unable to connect ?
+There are 10 reasons..(Gmail :: 25-Jul-23)
+
+Simple kubernetes one should know:
+#########
+>>what is the diff b/w Docker & kubernetes?
+>>kubernetes Architecture components?
+>>Docker swarm vs kubernetes?
+>>Docker container vs pod
+>>kubernetes deployment,statefulset vs daemonset?
+>>Namespace in kubernetes?
+>>role of kube-proxy?
+>>Types of services in kubernetes?
+>>Role of kubelet?
+>>what is ingress in kubernetes?
+>>Nodeport and loadbalancer type of service in kuberntes?
+
+
+Kyverno best practices:
+https://github.com/kyverno/policies/tree/main/best-practices

@@ -1,0 +1,127 @@
+Set-1:(30 Days)
+Git-->Jenkins-->Docker-->Kubernetes-->Monitoring & Logging
+
+Set-2:  (40 Days)
+Scripting -->AWS -->Terraform -->Ansible
+
+Set-3:  (30 Days)
+IQ's,Scenarios,Troubleshoot,Commands,Debugging
+   Projects on AWS & Devops
+   Istio,servicemesh,ArgoCD,FluxCD,Kubeshark,Artifactory(Nexus & Jfrog),kyverno,Msg Brokers(JMS,Kafka,RabbitMQ)
+   Networking,OS,S.Design,DB,Security & Vulnerability..
+   Helm & Kustomize,karpeneter..
+   Docker,Kubernetes,Cloud(Networking & Security)
+   Volumes in (Docker,kubernetes)
+   Security (Docker security,Network security,kubernetes security,Application security,CI/CD Pipeline,sonarqube,checkov)
+   kubernetes controllers & Operators,Ingress controller
+   Cluster mgmt Tool (Rancher)
+   servers(nginx,Tomcat,IIS,httpd),SonarQube
+   Maven
+
+Optional::
+#####
+zabbix,DataDog,APPDynamics,Dynatrace
+prometheus(Thanos),Grafana,Promtail,Loki..
+synk(Scanning of Docker images),sysdig..,Trivy(Vulnerability scanner for containers)
+security related tools(Kyverno),ELK Stack..(Elastic search,Logstash,Kibana)
+
+5 Stages in Preparation::
+--Learning & Notes preparation(Theory)
+--Handson
+--Advanced skills & Projects
+--Interview Handling
+--Revison from Mistakes..
+Everything available in Tool Documentation..
+
+
+https://www.golinuxcloud.com/kubernetes-services/
+
+
+P1--Kubernetes & its components
+P2 --Networking,OS,S.Design,DB
+    --Security & Vulnerability..
+P3 --Projects(AWS,Devops)
+P4 --AWS services(70)
+P5 --IQ's,Scenarios,Troubleshoot,
+        Commands,Debugging
+P6 --Ansible(N/W Automation)
+P7--Docker,Terraform,Git
+P8 --Monitoring,Logigng Tools,Kafka,RabbitMQ,Artifactory
+P9 --Jenkins,Gitlab CI/CD
+P10 --Scripting(Python,Go,Shell)
+P11 --Certifications..
+
+
+Tech world with nana
+praveen singampalli
+Rakesh Taninki(45 days of AWS)
+Abhishek veeramalla(45 Days Devops & AWS)
+Mitapalli kannaiah  ---Great Advanced kubernetes stuff..  
+Mutha nagavamsi..
+Brij kishore pandey
+Cloud with Raj(Kubernetes & AWS)
+Valaxy Technologies
+Sri Harsha
+Telugu IT Factory
+Devops shack(30 Day Devops --CI/CD Projects..
+Devops and cloud(Sanjeev kumar)
+Praveen Singh:: Linkedin (Security & Network for Cloud & Devops)
+Thetips4you  --Kubernetes..& CI/CD Projects(Very much useful)
+DevopsHint --CI/CD Devops Project
+Mr.Devops --End to End CI/CD Projects
+golinuxcloud(Website) -kubernetes,Ansible,Linux cmds
+
+###
+Bibin wilson --Good kube content
+shubham Londhe --Good Devops Content
+Mr.Devops --End to End CI/CD Devops Projects(For Devops Projects pls refer & Practice)`
+Mutha nagavamsi..
+Nagarjuna Hota --Good AWS Quick Revison content..
+Devops Journey
+Devops Toolkit --(Advanced Kubernetes Content)
+Areez Asif ---CI/CD Devops Projects..
+Paragh pallav singh --Github practice
+Devops coach
+Rahul Wagh --Kubernetes,Helm,Terraform(Specialist)
+Prashanth Lakhera --100 Days of Devops Interview
+
+The below 3 ppl Amazing (Cloud,Devops & Kubernetes ) content::
+Mitapalli kannaiah  ---Great Advanced kubernetes stuff..  
+Mutha nagavamsi..
+Brij kishore pandey
+
+
+
+
+Upwork
+Glassdoor
+GitHub jobs
+Flex jobs
+Fiverr
+Turing
+Dice
+AngelList
+Linkedin
+Remote.Co
+
+
+##########
+
+topmate.io -- Free 1:1 Training
+
+#####
+
+medium
+YouTube
+Github
+AWS Account
+hashnode
+linkedin
+Gmail
+
+
+
+Websites for learning(Devops & Cloud):
+#############
+
+1.www.golinuxcloud.com
